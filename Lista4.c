@@ -54,8 +54,8 @@ int div(int a, int b){
 
 float qrd(float x, float chute ){
     if (chute*chute >=-0.001 && chute*chute <= x+0.001) return (chute);
-    if (chute*chute > x) return (raiz(x, chute*0.5));
-    if (chute*chute < x) return (raiz(x, chute*1.5));
+    if (chute*chute > x) return (qrd(x, chute*0.5));
+    if (chute*chute < x) return (qrd(x, chute*1.5));
 }
 
 int dig(int n){
@@ -67,8 +67,12 @@ int dig(int n){
 }
 
 int main(){
-    
-    printf("%d", mdc(23, 7));
+    //printf("%d", primo(13, 12));
+    for (int i; i < 10 ; i--){
+        if (primo(i, --i) == 1) printf("%d", i);
+    }
+
+
 
     return 0;
 }
