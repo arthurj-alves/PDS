@@ -41,8 +41,19 @@ int decrescente (int n){
     }
 }
 
+
+int form(n){
+    int aux = 0;
+    for(int i = n; i > 0; --i){
+        aux = aux + i*i
+    }
+    return (aux);
+}
+
+
 int main (){
-
-
+    int n;
+    printf("%d", form(n));
+    scanf("%d", &n);
     return 0;
 }
