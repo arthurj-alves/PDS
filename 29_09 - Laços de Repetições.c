@@ -41,6 +41,7 @@ int decrescente (int n){
     }
 }
 
+<<<<<<< HEAD
 
 int form(n){
     int aux = 0;
@@ -55,5 +56,10 @@ int main (){
     int n;
     printf("%d", form(n));
     scanf("%d", &n);
+=======
+int main (){
+
+
+>>>>>>> 6e0bfa0 (atualização de arquivos)
     return 0;
 }

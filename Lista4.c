@@ -27,7 +27,11 @@ int primo (int x, int n){
     return (primo(x, n-1)); 
 }
 
+<<<<<<< HEAD
 int decrescente(int n){      //Não está funcionando
+=======
+int decrescente(int n){
+>>>>>>> 6e0bfa0 (atualização de arquivos)
     if(n>0){
         printf("%d\n", n);
         return (decrescente(n-1));
@@ -35,8 +39,14 @@ int decrescente(int n){      //Não está funcionando
     return 0;
 }
 
+<<<<<<< HEAD
 int res(int a, int b){
     return (a%b);
+=======
+int res(int a, int b, int aux){
+    if((a - b) > 0) return (a);
+    else return (a-b, b);
+>>>>>>> 6e0bfa0 (atualização de arquivos)
 }
 
 int form(int n){
@@ -48,17 +58,27 @@ int mmc(int a, int b){
     return ((a*b) / mdc(a, b));
 }
 
+<<<<<<< HEAD
 int div(int a, int b){
     return (a/b);
 }
 
 float qrd(float x, float chute ){
+=======
+int div(int a, int b, int aux){
+    if(a-b < 0) return (a, b, ++aux);
+    else return (aux);
+}
+
+float qrd(float x, float chute){
+>>>>>>> 6e0bfa0 (atualização de arquivos)
     if (chute*chute >=-0.001 && chute*chute <= x+0.001) return (chute);
     if (chute*chute > x) return (qrd(x, chute*0.5));
     if (chute*chute < x) return (qrd(x, chute*1.5));
 }
 
 int dig(int n){
+<<<<<<< HEAD
     int unid, dez, cent;
     cent = n / 100;
     dez = (n - (cent*100)) / 10;
@@ -73,6 +93,91 @@ int main(){
     }
 
 
+=======
+/*  int unid, dez, cent;
+    cent = n / 100;
+    dez = (n - (cent*100)) / 10;
+    unid = (n - (cent*100) - (dez*10)); 
+    return (cent + dez + unid); */
+    if(n%10==n)return(n);
+	return(n%10+dig(n/10));
+}
+
+int expp(int k, int n){
+    if(n > 0) return(expp(k*k, --n));
+    else return 0;
+
+}
+
+int crescente(int x){
+    if(x==0) return 0;  
+	else
+	{
+	crescente(x-1);
+	printf("%d\n",x);
+	}
+
+}
+
+int main(){
+    int a, b, c;
+//1.a)Fatorial
+    printf("Fatorial de: (1 valor)\n");
+    scanf("%d", &a);
+    printf("= %d", fat(a));
+//1.b)MDC
+    printf("MDC de: (2 valores)\n");
+    scanf("%d %d", &a, &b);
+    printf("= %d", mdc(a, b));
+//1.c) MDC3
+    printf("MDC3 de: (3 valores)\n");
+    scanf("%d %d %d", &a, &b, &c);
+    printf("= %d", mdc3(a, b, c));
+//1.d) Fibonachi
+    printf("O enésimo Fibonachi eh: (1 valor)\n");
+    scanf("%d", &a);
+    printf("= %d", fib(a));
+//1.e) Primo
+    printf("Os Primos até: (1 valor)\n");
+    scanf("%d", &a);
+    printf("= %d", primo(a, a/2));
+//1.f) Decrescente
+    printf("Numeros Decrescente a partir: (1 valor)\n");
+    scanf("%d", &a);
+    printf("= %d", decrescente(a));
+//1.g) Resto
+    printf("Resto de x por y: (2 valores)\n");
+    scanf("%d %d", &a, &b);
+    printf("= %d", res(a, b, 0));
+//1.h) Form
+    printf("Form  de: (1 valor)\n");
+    scanf("%d", &a);
+    printf("= %d", form(a));
+//1.i) MMC
+    printf("MMC de: (2 valores)\n");
+    scanf("%d %d", &a, &b);
+    printf("= %d", mdc(a, b));
+//1.j) Divisão
+    printf("Quadrado de: (2 valores)\n");
+    scanf("%d %d", &a, &b);
+    printf("= %d", mdc(a, b));
+//1.l) Quadrado
+    printf("MDC de: (2 valores)\n");
+    scanf("%d %d", &a, &b);
+    printf("= %d", mdc(a, b));
+//1.m) Soma dos algarismos
+    printf("Form  de: (1 valores)\n");
+    scanf("%d", &a);
+    printf("= %d", dig(a));
+//1.n) Exponencial
+    printf("Expenencial de por: (2 valores)\n");
+    scanf("%d %d", &a, &b);
+    printf("= %d", expp(a, b));
+//1.o) Crescente
+    printf("Numeros Decrescente até: (1 valor)\n");
+    scanf("%d", &a);
+    decrescente(a);
+>>>>>>> 6e0bfa0 (atualização de arquivos)
 
     return 0;
 }
