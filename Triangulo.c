@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// a
 int fazTriangulo(int n){
     int aux;
     for(int i=0; i < n; i++){

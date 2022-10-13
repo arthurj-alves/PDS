@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-
+// a
 int quadrado(int n){
     for (int i = 0; i <= n; i++)
     {

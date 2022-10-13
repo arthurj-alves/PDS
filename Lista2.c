@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-
+// a
 void quebraLinha();
 
 // a) Média: calcula a média de a, b e c.

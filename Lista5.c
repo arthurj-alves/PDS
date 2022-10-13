@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// a
 int fat (int n){
     int f = 1; 
     for (int i = 1; i <= n; i++){

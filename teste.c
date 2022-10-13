@@ -18,7 +18,7 @@ int res(int a, int b){
 
 int main(){
 
-
+    int a; 
     printf("%d", res(7, 2));
 
     return 0; 

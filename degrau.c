@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// a
 void degrau(int x);
 
 int main()
